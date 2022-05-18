@@ -51,6 +51,10 @@ function sum(a, b) {
 }
 // console.log(sum(2,8));
 
+// En utilisant split et join, essaie de transformer la chaine Wild_Code_School en Wild Code School en seulement une ligne de JS.
+const withSpaces = withUnderscores.split('_').join(' ');
+// console.log(withSpaces);
+
 // Ecris un objet littéral (sans POO) qui te représente: nom, age, sexe, loisirs, ton langage de prédilection, une fonction pour te présenter, une fonction qui récite ton elevator speech
 const loic = {
   firstName: 'Loic',

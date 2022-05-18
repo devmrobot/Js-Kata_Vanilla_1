@@ -14,6 +14,8 @@
 
 // Ecrire une fonction qui me renvoie la somme de deux nombres passés en paramètres
 
+// En utilisant split et join, essaie de transformer la chaine Wild_Code_School en Wild Code School en seulement une ligne de JS.
+
 // Ecris un objet littéral (sans POO) qui te représente: nom, age, sexe, loisirs, ton langage de prédilection, une fonction pour te présenter, une fonction qui récite ton elevator speech
 
 /* Ecris une fonction fizzBuzz(num) qui te renvoie:
