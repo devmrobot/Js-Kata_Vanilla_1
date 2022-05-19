@@ -1,0 +1,19 @@
+const abreviation = (str) => {
+  
+    let prenomNom = (str.trim().split(" "));
+    console.log('test1', str.trim().split(" "));
+ 
+     if (prenomNom.length > 2) {
+       prenomNom.slice(0,2);
+     }
+     console.log('test2',prenomNom.slice(0,2));
+  
+     if (prenomNom.length > 1) {
+        return(`${prenomNom[0]} ${prenomNom[1].charAt(0).toUpperCase()}.`)
+     }
+};
+
+console.log(abreviation("John Doe")); // John D.
+console.log(abreviation("Guillaume tel")); // John D.
+console.log(abreviation("Paul Delattre Abisse")); // John D.
+console.log(abreviation("             Alfred Hitchcock                 ")); // Alfred H.
