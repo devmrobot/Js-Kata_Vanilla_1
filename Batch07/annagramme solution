@@ -1,0 +1,38 @@
+const anagramme = (strA, strB) => {
+  
+   /* Regex pour retier tout ce qui n'est pas lettre entre a et z => retourne rien 
+   ^ pour tout ce qui est différent de ce qui suit le ^ ne doit pas être pris en compte.
+   g pour global (s'appique à toute la chaine) puis on passe en tableau avec un trie par ordre alpha
+   et on retourne à nouveau un string */
+  
+  const cleanChain = (str) => {
+    return str.toLowerCase().replace(/[^a-z]/g,'').split('').sort().join('');
+  }
+  // console.log(cleanChain("$*^^Gare"));
+  
+  /* Ternaire pour intégrer le rendu rendu conditionnel = 
+  vérifier si les deux string triés par ordre alpha sont similaires */
+  
+  return (cleanChain(strA) === cleanChain(strB) ? "This is an annagramme" : "This isn't an annagramme");
+}
+
+console.log(anagramme("Faible", " fiable")); // True
+console.log(anagramme("$*^^gare", "        Rag    e")); // True
+console.log(anagramme("bougie", "piano")); // False
+
+
+// -----------------  Énoncé ------------------- //
+
+// Créez un algorithme qui va retourner true si le premier paramètre est un anagramme du second, false dans le cas contraire.
+// Malheuresement les entrées contiennent parfois des symboles et des espaces qu'il va falloir supprimer des chaînes.
+
+
+// -----------------  Conseils ------------------- //
+
+// Regex
+// sort()
+// toLowerCase()
+// replace()
+// join()
+// split()
+// comparaison "=="
