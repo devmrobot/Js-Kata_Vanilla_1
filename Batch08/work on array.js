@@ -1,13 +1,4 @@
 
-// Retourner la somme des éléments qui sont des nombres.
-// interdit d'utiliser des boucles : for, for..in...)
-
-const arr = [1, "John", 24, true];
-
-const sum = () => {
-  arr.filter(Number.isFinite).reduce((a, b) => a + b);
-};
-sum();
 
 // TIPS - comment choisir entre map, filter et reduce ?
 
